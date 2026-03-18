@@ -2684,3 +2684,12 @@ img {
         font-size: 1.7rem;
     }
 }
+
+/* Mobile: fix background-attachment: fixed not supported on iOS/mobile */
+@media (max-width: 768px) {
+    .cases,
+    .features,
+    .jobs {
+        background-attachment: scroll;
+    }
+}
